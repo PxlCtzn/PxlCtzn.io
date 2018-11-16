@@ -1,0 +1,48 @@
+// _spacing.scss
+
+// ---
+// This file is part of the PxlCtzn Website project.
+//
+// Copyright (C) 2018  PxlCtzn
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+// See the GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License along with this program.
+// If not, see <https://www.gnu.org/licenses/>.
+// ---
+  
+:root {
+    /* spacing values */
+    --space-xxxs: 0.25em;
+    --space-xxs:  0.375em;
+    --space-xs:   0.5em;
+    --space-sm:   0.75em;
+    --space-md:   1.25em;
+    --space-lg:   2em;
+    --space-xl:   3.25em;
+    --space-xxl:  5.25em;
+    --space-xxxl: 8.5em;
+}
+
+h1, h2, h3, h4, form legend {
+    margin-bottom: var(--space-xxs);
+    line-height: var(--heading-line-height);
+}
+
+.text-container {
+    h2, h3, h4 {
+        margin-top: var(--space-sm);
+    }
+    
+    ul, ol, p {
+        margin-bottom: var(--space-md);
+    }
+}

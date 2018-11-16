@@ -6,7 +6,12 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <h1 id="brand">{{ app_name }}</h1>
+        {% include 'partials/menu.html.twig' %}
+        {% block body %}
+            {% include 'partials/articles/podcast.html.twig' %}
+        {% endblock %}
+        {% include 'partials/footer.html.twig' %}
         {% block javascripts %}{% endblock %}
     </body>
 </html>

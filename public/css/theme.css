@@ -1,0 +1,140 @@
+/*
+ * This file is part of the PxlCtzn Website project.
+ *
+ * Copyright (C) 2018  PxlCtzn
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with this program.
+ * If not, see <https://www.gnu.org/licenses/>.
+ */
+:root {
+  --color-git-background: #000;
+  --color-git-black: #151515;
+  --color-git-white: #FFF;
+  --color-git-red: #EE4141;
+  --color-git-yellow:#F5BF24;
+  --color-git-pink: #FF6C81;
+  --color-git-green: #67D3BE;
+  --color-git-blue: #67BBEF;
+  --color-git-purple:#8A65AA;
+  --color-git-grey: #272727;
+  --color-git-brown: #5A352A;
+  --color-git-orange:#F34F29;
+  --color-teletype-background: #343233;
+  --color-teletype-black: #1A1919;
+  --color-teletype-white: #EFDAB9;
+  --color-teletype-red: #A40E4C;
+  --color-teletype-yellow:#DDA032;
+  --color-teletype-pink: #F67E7D;
+  --color-teletype-green: #78AF9F;
+  --color-teletype-blue: #659CC8;
+  --color-teletype-purple:#9055A2;
+  --color-teletype-grey: #5D5B5C;
+  --color-teletype-brown: #532E1F;
+  --color-teletype-orange:#C13F21;
+  --color-werner-background: #EBE4CF;
+  --color-werner-white: #EEE7CD;
+  --color-werner-grey: #808074;
+  --color-werner-black: #1E1818;
+  --color-werner-blue: #597697;
+  --color-werner-purple:#53527A;
+  --color-werner-green: #87A764;
+  --color-werner-yellow:#D1BD3A;
+  --color-werner-red: #711C17;
+  --color-werner-brown: #7B4739;
+  --color-werner-pink: #C9526E;
+  --color-werner-orange:#D27D3D;
+}
+
+:root {
+  /* Primary Font */
+  --font-primary: sans-serif;
+  --font-secondary: serif;
+  /* Set Base Value*/
+  --text-base-size: 1em;
+  --text-scale-ratio: 1.2;
+  /* Type Scale */
+  --text-xs: calc(var(--text-sm) / var(--text-scale-ratio));
+  --text-sm: calc(1em / var(--text-scale-ratio));
+  --text-md: calc(1em * var(--text-scale-ratio));
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl:calc(var(--text-xl) * var(--text-scale-ratio));
+  --text-xxxl:calc(var(--text-xxl) * var(--text-scale-ratio));
+  --heading-line-height: 1.2;
+  --body-line-height: 1.4;
+}
+
+body {
+  font-size: var(--text-base-size);
+  font-family: var(--font-primary);
+  color: var(--text-base-color);
+}
+
+h1, h2, h3, h4 {
+  line-height: var(--heading-line-height);
+}
+
+h1, .text-xxl {
+  font-size: var(--text-xxl);
+}
+
+h2, .text-xl {
+  font-size: var(--text-xl);
+}
+
+h3, .text-lg {
+  font-size: var(--text-lg);
+}
+
+h4, .text-md {
+  font-size: var(--text-md);
+}
+
+small, .text-sm {
+  font-size: var(--text-sm);
+}
+
+.text-xs {
+  font-size: var(--text-xs);
+}
+
+p {
+  line-height: var(--body-line-height);
+}
+
+:root {
+  /* spacing values */
+  --space-xxxs: 0.25em;
+  --space-xxs: 0.375em;
+  --space-xs: 0.5em;
+  --space-sm: 0.75em;
+  --space-md: 1.25em;
+  --space-lg: 2em;
+  --space-xl: 3.25em;
+  --space-xxl: 5.25em;
+  --space-xxxl: 8.5em;
+}
+
+h1, h2, h3, h4, form legend {
+  margin-bottom: var(--space-xxs);
+  line-height: var(--heading-line-height);
+}
+
+.text-container h2, .text-container h3, .text-container h4 {
+  margin-top: var(--space-sm);
+}
+.text-container ul, .text-container ol, .text-container p {
+  margin-bottom: var(--space-md);
+}
+
+/*# sourceMappingURL=theme.css.map */
