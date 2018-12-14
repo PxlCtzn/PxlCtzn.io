@@ -21,13 +21,13 @@
 
 :root {
 	/* Primary Font */
-  --font-primary:   sans-serif;
-  --font-secondary: serif;
+  --font-primary:   "Linux-Libertine",	serif;		// Body font 
+  --font-secondary: "Changa", 	sans-serif; // Title font
+  --font-brand: "Kanit", sans-serif;	
   
-  /* Set Base Value*/
+  /* Text Base Value*/
   --text-base-size:   1em; // 16px
   --text-scale-ratio: 1.2;
-  
   
   /* Type Scale */
   --text-xs: calc(var(--text-sm) / var(--text-scale-ratio));
@@ -42,6 +42,21 @@
   --heading-line-height: 1.2;
   --body-line-height: 1.4;
 }
+/*
+@include breakpoint(md) {
+  :root {
+    // you can manage typography editing only these 2 variables
+    --text-base-size: 1.25em;
+    --text-scale-ratio: 1.25;
+  }
+}
+*/
+// BRAND
+h1#brand {
+  font-family: var(--font-brand);
+  font-variant: small-caps;
+  font-weight: 300;
+}
 
 body{
   font-size:    var(--text-base-size);
@@ -50,7 +65,15 @@ body{
 }
 
 h1, h2, h3, h4 {
+  font-family:  var(--font-secondary);
+  font-weight: bold;
   line-height: var(--heading-line-height);
+}
+
+/* Text size */
+
+.text-xxxl {
+  font-size: var(--text-xxxl);
 }
 
 h1, .text-xxl{

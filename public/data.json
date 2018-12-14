@@ -1,0 +1,40 @@
+{
+	"menus": [
+		{
+			"link": "#home",
+			"icon": "home",
+			"name": "Home",
+			"color":"git-yellow" 
+		}
+		,{
+			"link": "#blog",
+			"icon": "doc-text",
+			"name": "Blog",
+			"color":"git-grey"
+		}
+		,{
+			"link": "#books",
+			"icon": "book",
+			"name": "Books",
+			"color":"werner-purple"
+		}
+		,{
+			"link": "#projects",
+			"icon": "wrench",
+			"name": "Projects",
+			"color":"werner-pink"
+		}
+		,{
+			"link": "#git",
+			"icon": "github-circled",
+			"name": "Git",
+			"color":"git-orange"
+		}
+		,{
+			"link": "#podcast",
+			"icon": "podcast",
+			"name": "Podcast",
+			"color":"teletype-green"
+		}
+	]
+}

@@ -1,0 +1,94 @@
+// fonts/_changa.scss
+
+// ---
+// This file is part of the PxlCtzn Website project.
+//
+// Copyright (C) 2018  PxlCtzn
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+// See the GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License along with this program.
+// If not, see <https://www.gnu.org/licenses/>.
+// ---
+
+// Import order : otf, ttf
+
+// Extra Light
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 200;
+  src:  url('../fonts/changa/Fonts/OTF/Changa-ExtraLight.otf')   format('opentype'),
+        url('../fonts/changa/Fonts/TTF/Changa-ExtraLight.ttf')   format('truetype');
+}
+
+// Light
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 300;
+  src:  url('../fonts/changa/Fonts/OTF/Changa-Light.otf')   format('opentype'),
+        url('../fonts/changa/Fonts/TTF/Changa-Light.ttf')   format('truetype');
+}
+
+// Normal
+@font-face {
+	font-family: "Changa";
+	font-style: normal;
+	font-weight: 400;
+	src:  url('../fonts/changa/Fonts/OTF/Changa-Regular.otf') 	format('opentype'),
+  			url('../fonts/changa/Fonts/TTF/Changa-Regular.ttf') 	format('truetype');
+}
+
+// Medium
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 500;
+  src:  url('../fonts/changa/Fonts/OTF/Changa-Medium.otf')   format('opentype'),
+        url('../fonts/changa/Fonts/TTF/Changa-Medium.ttf')   format('truetype');
+}
+
+// Semi Bold
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 600;
+  src:  url('../fonts/changa/Fonts/OTF/Changa-SemiBold.otf')   format('opentype'),
+        url('../fonts/changa/Fonts/TTF/Changa-SemiBold.ttf')   format('truetype');
+}
+
+// Bold
+@font-face {
+	font-family: "Changa";
+	font-style: normal;
+	font-weight: 700;
+	src:  url('../fonts/changa/Fonts/OTF/Changa-Bold.otf') 	format('opentype'),
+  			url('../fonts/changa/Fonts/TTF/Changa-Bold.ttf') 	format('truetype');
+}
+
+// Extra Bold
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 800;
+  src:  url('../fonts/changa/Fonts/OTF/Changa-ExtraBold.otf')   format('opentype'),
+        url('../fonts/changa/Fonts/TTF/Changa-ExtraBold.ttf')   format('truetype');
+}
+
+// Black (heavy)
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 900;
+  src:  url('../fonts/changa/Fonts/OTF/Changa-Black.otf')   format('opentype'),
+        url('../fonts/changa/Fonts/TTF/Changa-Black.ttf')   format('truetype');
+}

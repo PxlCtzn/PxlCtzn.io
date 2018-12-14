@@ -1,0 +1,89 @@
+// fonts/_linux-libertine.scss
+
+// ---
+// This file is part of the PxlCtzn Website project.
+//
+// Copyright (C) 2018  PxlCtzn
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+// See the GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License along with this program.
+// If not, see <https://www.gnu.org/licenses/>.
+// ---
+
+// Import order : woff, otf, ttf, svg
+
+// Normal
+@font-face {
+	font-family: "Linux-Libertine";
+	font-style: normal;
+	font-weight: normal;
+	src: 	url('../fonts/linux_libertine/woff/LinLibertine_R.woff')  format('woff'),
+        url('../fonts/linux_libertine/otf/LinLibertine_R.otf')    format('opentype'),
+//      url('../fonts/linux_libertine/ttf/LinLibertine_Rah.ttf')  format('truetype'),	// Disable ; Cause : BAD FILE
+        url('../fonts/linux_libertine/svg/LinLibertine_R.svg')		format('svg');
+}
+ // Normal bold
+@font-face {
+	font-family: "Linux-Libertine";
+	font-style: normal;
+	font-weight: bold;
+	src: 	url('../fonts/linux_libertine/woff/LinLibertine_RB.woff')  format('woff'),
+        url('../fonts/linux_libertine/otf/LinLibertine_RB.otf')    format('opentype'),
+//			url('../fonts/linux_libertine/ttf/LinLibertine_RBah.ttf')  format('truetype'),	// Disable ; Cause : BAD FILE
+        url('../fonts/linux_libertine/svg/LinLibertine_RB.svg')    format('svg');
+}
+
+
+// Bold + Italic
+@font-face {
+	font-family: 	"Linux-Libertine";
+	font-style:		italic;
+	font-weight: 	bold;
+	src: 	url('../fonts/linux_libertine/woff/LinLibertine_RBI.woff')	format('woff'),
+        url('../fonts/linux_libertine/otf/LinLibertine_RBI.otf') 	format('opentype'),
+//			url('../fonts/linux_libertine/ttf/LinLibertine_RBIah.ttf') format('truetype'),	// Disable ; Cause : BAD FILE
+        url('../fonts/linux_libertine/svg/LinLibertine_RBI.svg')	format('svg');
+}
+
+// Italic
+@font-face {
+	font-family: 	"Linux-Libertine";
+	font-style:		italic;
+	font-weight: 	normal;
+	src: 	url('../fonts/linux_libertine/woff/LinLibertine_RI.woff')	format('woff'),
+        url('../fonts/linux_libertine/otf/LinLibertine_RI.otf') 	format('opentype'),
+//			url('../fonts/linux_libertine/ttf/LinLibertine_RIah.ttf')	format('truetype'),	// Disable ; Cause : BAD FILE
+        url('../fonts/linux_libertine/svg/LinLibertine_RI.svg')	format('svg');
+}
+
+// Semi bold
+@font-face {
+	font-family: 	"Linux-Libertine";
+	font-style:		normal;
+	font-weight: 	600;
+	src: 	url('../fonts/linux_libertine/woff/LinLibertine_RZ.woff')  format('woff'),
+        url('../fonts/linux_libertine/otf/LinLibertine_RZ.otf') 	 format('opentype'),
+        url('../fonts/linux_libertine/ttf/LinLibertine_RZah.ttf')  format('truetype'),
+        url('../fonts/linux_libertine/svg/LinLibertine_RZ.svg')    format('svg');
+}
+
+// Semi bold + Italic
+@font-face {
+	font-family: 	"Linux-Libertine";
+	font-style:		italic;
+	font-weight: 	600;
+	src: 	url('../fonts/linux_libertine/woff/LinLibertine_RZI.woff') format('woff'),
+        url('../fonts/linux_libertine/otf/LinLibertine_RZI.otf')   format('opentype'),
+        url('../fonts/linux_libertine/ttf/LinLibertine_RZIah.ttf') format('truetype'),
+        url('../fonts/linux_libertine/svg/LinLibertine_RZI.svg')	 format('svg');
+}
+

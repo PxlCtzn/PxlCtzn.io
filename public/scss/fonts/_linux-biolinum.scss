@@ -1,0 +1,54 @@
+// fonts/_linux-biolinum.scss
+
+// ---
+// This file is part of the PxlCtzn Website project.
+//
+// Copyright (C) 2018  PxlCtzn
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+// See the GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License along with this program.
+// If not, see <https://www.gnu.org/licenses/>.
+// ---
+
+// Import order : woff, otf, ttf, svg
+ 
+// Normal
+@font-face {
+	font-family: "Linux-Biolinum";
+	font-style: normal;
+	font-weight: normal;
+	src: 	url('../fonts/linux_biolinum/woff/LinBiolinum_R.woff')		format('woff'),
+        url('../fonts/linux_biolinum/otf/LinBiolinum_R.otf') 		format('opentype'),
+        url('../fonts/linux_biolinum/ttf/LinBiolinum_Rah.ttf') 	format('truetype'),
+        url('../fonts/linux_biolinum/svg/LinBiolinum_R.svg')		format('svg');
+}
+ // Normal bold
+@font-face {
+	font-family: "Linux-Biolinum";
+	font-style: normal;
+	font-weight: bold;
+	src:  url('../fonts/linux_biolinum/woff/LinBiolinum_RB.woff')	format('woff'),
+        url('../fonts/linux_biolinum/otf/LinBiolinum_RB.otf') 		format('opentype'),
+        url('../fonts/linux_biolinum/ttf/LinBiolinum_RBah.ttf') 	format('truetype'),
+        url('../fonts/linux_biolinum/svg/LinBiolinum_RB.svg')		format('svg');
+}
+
+// Italic
+@font-face {
+	font-family: 	"Linux-Biolinum";
+	font-style:		italic;
+	font-weight: 	normal;
+	src: 	url('../fonts/linux_biolinum/woff/LinBiolinum_RI.woff')	format('woff'),
+        url('../fonts/linux_biolinum/otf/LinBiolinum_RI.otf') 		format('opentype'),
+        url('../fonts/linux_biolinum/ttf/LinBiolinum_RIah.ttf') 	format('truetype'),
+        url('../fonts/linux_biolinum/svg/LinBiolinum_RI.svg')		format('svg');
+}

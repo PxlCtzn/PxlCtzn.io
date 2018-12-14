@@ -1,10 +1,19 @@
-<nav class="main_menu">
+<nav id="main_menu">
+  <div class="hamburger main_menu">
+    <span class="patty"></span>
+  </div>
   <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#blog">Blog</a></li>
-    <li><a href="#books">Books</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#git">Git</a></li>
-    <li><a href="#podcast">Podcasts</a></li>
+    {% for menu in data.menus %}
+    <li class="main_menu--item">
+      {% if loop.index0 is even %}
+        <a href="{{ menu.link }}">
+    	{% else %}
+        <a href="{{ menu.link }}" class="main_menu--item--odd">
+    	{% endif %}
+          <span class="icon-{{ menu.icon }} main_menu--icon" style="background-color:var(--color-{{ menu.color }})"></span>
+          {{ menu.name }}
+          </a>
+	    </li>
+	{% endfor %}
   </ul>
 </nav>

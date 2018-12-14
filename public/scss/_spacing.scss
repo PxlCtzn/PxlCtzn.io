@@ -21,15 +21,16 @@
   
 :root {
     /* spacing values */
-    --space-xxxs: 0.25em;
-    --space-xxs:  0.375em;
-    --space-xs:   0.5em;
-    --space-sm:   0.75em;
-    --space-md:   1.25em;
-    --space-lg:   2em;
-    --space-xl:   3.25em;
-    --space-xxl:  5.25em;
-    --space-xxxl: 8.5em;
+    --space-unit: 1em;
+    --space-xxxs: calc(0.25 * var(--space-unit));
+    --space-xxs:  calc(0.375 * var(--space-unit));
+    --space-xs:   calc(0.5 * var(--space-unit));
+    --space-sm:   calc(0.75 * var(--space-unit));
+    --space-md:   calc(1.25 * var(--space-unit));
+    --space-lg:   calc(2 * var(--space-unit));
+    --space-xl:   calc(3.25 * var(--space-unit));
+    --space-xxl:  calc(5.25 * var(--space-unit));
+    --space-xxxl: calc(8.5 * var(--space-unit));
 }
 
 h1, h2, h3, h4, form legend {

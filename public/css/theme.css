@@ -16,6 +16,228 @@
  * You should have received a copy of the GNU General Public License along with this program.
  * If not, see <https://www.gnu.org/licenses/>.
  */
+@font-face {
+  font-family: "Linux-Biolinum";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/linux_biolinum/woff/LinBiolinum_R.woff") format("woff"), url("../fonts/linux_biolinum/otf/LinBiolinum_R.otf") format("opentype"), url("../fonts/linux_biolinum/ttf/LinBiolinum_Rah.ttf") format("truetype"), url("../fonts/linux_biolinum/svg/LinBiolinum_R.svg") format("svg");
+}
+@font-face {
+  font-family: "Linux-Biolinum";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/linux_biolinum/woff/LinBiolinum_RB.woff") format("woff"), url("../fonts/linux_biolinum/otf/LinBiolinum_RB.otf") format("opentype"), url("../fonts/linux_biolinum/ttf/LinBiolinum_RBah.ttf") format("truetype"), url("../fonts/linux_biolinum/svg/LinBiolinum_RB.svg") format("svg");
+}
+@font-face {
+  font-family: "Linux-Biolinum";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/linux_biolinum/woff/LinBiolinum_RI.woff") format("woff"), url("../fonts/linux_biolinum/otf/LinBiolinum_RI.otf") format("opentype"), url("../fonts/linux_biolinum/ttf/LinBiolinum_RIah.ttf") format("truetype"), url("../fonts/linux_biolinum/svg/LinBiolinum_RI.svg") format("svg");
+}
+@font-face {
+  font-family: "Linux-Libertine";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/linux_libertine/woff/LinLibertine_R.woff") format("woff"), url("../fonts/linux_libertine/otf/LinLibertine_R.otf") format("opentype"), url("../fonts/linux_libertine/svg/LinLibertine_R.svg") format("svg");
+}
+@font-face {
+  font-family: "Linux-Libertine";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/linux_libertine/woff/LinLibertine_RB.woff") format("woff"), url("../fonts/linux_libertine/otf/LinLibertine_RB.otf") format("opentype"), url("../fonts/linux_libertine/svg/LinLibertine_RB.svg") format("svg");
+}
+@font-face {
+  font-family: "Linux-Libertine";
+  font-style: italic;
+  font-weight: bold;
+  src: url("../fonts/linux_libertine/woff/LinLibertine_RBI.woff") format("woff"), url("../fonts/linux_libertine/otf/LinLibertine_RBI.otf") format("opentype"), url("../fonts/linux_libertine/svg/LinLibertine_RBI.svg") format("svg");
+}
+@font-face {
+  font-family: "Linux-Libertine";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/linux_libertine/woff/LinLibertine_RI.woff") format("woff"), url("../fonts/linux_libertine/otf/LinLibertine_RI.otf") format("opentype"), url("../fonts/linux_libertine/svg/LinLibertine_RI.svg") format("svg");
+}
+@font-face {
+  font-family: "Linux-Libertine";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/linux_libertine/woff/LinLibertine_RZ.woff") format("woff"), url("../fonts/linux_libertine/otf/LinLibertine_RZ.otf") format("opentype"), url("../fonts/linux_libertine/ttf/LinLibertine_RZah.ttf") format("truetype"), url("../fonts/linux_libertine/svg/LinLibertine_RZ.svg") format("svg");
+}
+@font-face {
+  font-family: "Linux-Libertine";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/linux_libertine/woff/LinLibertine_RZI.woff") format("woff"), url("../fonts/linux_libertine/otf/LinLibertine_RZI.otf") format("opentype"), url("../fonts/linux_libertine/ttf/LinLibertine_RZIah.ttf") format("truetype"), url("../fonts/linux_libertine/svg/LinLibertine_RZI.svg") format("svg");
+}
+@font-face {
+  font-family: "Linux-Libertine-Display";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/linux_libertine/woff/LinLibertine_DR.woff") format("woff"), url("../fonts/linux_libertine/otf/LinLibertine_DR.otf") format("opentype"), url("../fonts/linux_libertine/svg/LinLibertine_DR.svg") format("svg");
+}
+@font-face {
+  font-family: "Linux-Libertine-Initial";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/linux_libertine/woff/LinLibertine_I.woff") format("woff"), url("../fonts/linux_libertine/otf/LinLibertine_I.otf") format("opentype"), url("../fonts/linux_libertine/svg/LinLibertine_I.svg") format("svg");
+}
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/changa/Fonts/OTF/Changa-ExtraLight.otf") format("opentype"), url("../fonts/changa/Fonts/TTF/Changa-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/changa/Fonts/OTF/Changa-Light.otf") format("opentype"), url("../fonts/changa/Fonts/TTF/Changa-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/changa/Fonts/OTF/Changa-Regular.otf") format("opentype"), url("../fonts/changa/Fonts/TTF/Changa-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/changa/Fonts/OTF/Changa-Medium.otf") format("opentype"), url("../fonts/changa/Fonts/TTF/Changa-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/changa/Fonts/OTF/Changa-SemiBold.otf") format("opentype"), url("../fonts/changa/Fonts/TTF/Changa-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/changa/Fonts/OTF/Changa-Bold.otf") format("opentype"), url("../fonts/changa/Fonts/TTF/Changa-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/changa/Fonts/OTF/Changa-ExtraBold.otf") format("opentype"), url("../fonts/changa/Fonts/TTF/Changa-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/changa/Fonts/OTF/Changa-Black.otf") format("opentype"), url("../fonts/changa/Fonts/TTF/Changa-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/kanit/font/Kanit-Thin.otf") format("opentype"), url("../fonts/kanit/font/Kanit-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: italic;
+  font-weight: 100;
+  src: url("../fonts/kanit/font/Kanit-ThinItalic.otf") format("opentype"), url("../fonts/kanit/font/Kanit-ThinItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/kanit/font/Kanit-ExtraLight.otf") format("opentype"), url("../fonts/kanit/font/Kanit-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: italic;
+  font-weight: 200;
+  src: url("../fonts/kanit/font/Kanit-ExtraLightItalic.otf") format("opentype"), url("../fonts/kanit/font/Kanit-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/kanit/font/Kanit-Light.otf") format("opentype"), url("../fonts/kanit/font/Kanit-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/kanit/font/Kanit-LightItalic.otf") format("opentype"), url("../fonts/kanit/font/Kanit-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/kanit/font/Kanit-Regular.otf") format("opentype"), url("../fonts/kanit/font/Kanit-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/kanit/font/Kanit-Italic.otf") format("opentype"), url("../fonts/kanit/font/Kanit-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/kanit/font/Kanit-Medium.otf") format("opentype"), url("../fonts/kanit/font/Kanit-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/kanit/font/Kanit-MediumItalic.otf") format("opentype"), url("../fonts/kanit/font/Kanit-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/kanit/font/Kanit-SemiBold.otf") format("opentype"), url("../fonts/kanit/font/Kanit-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/kanit/font/Kanit-SemiBoldItalic.otf") format("opentype"), url("../fonts/kanit/font/Kanit-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/kanit/font/Kanit-Bold.otf") format("opentype"), url("../fonts/kanit/font/Kanit-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/kanit/font/Kanit-BoldItalic.otf") format("opentype"), url("../fonts/kanit/font/Kanit-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/kanit/font/Kanit-ExtraBold.otf") format("opentype"), url("../fonts/kanit/font/Kanit-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../fonts/kanit/font/Kanit-ExtraBoldItalic.otf") format("opentype"), url("../fonts/kanit/font/Kanit-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/kanit/font/Kanit-Black.otf") format("opentype"), url("../fonts/kanit/font/Kanit-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/kanit/font/Kanit-BlackItalic.otf") format("opentype"), url("../fonts/kanit/font/Kanit-BlackItalic.ttf") format("truetype");
+}
 :root {
   --color-git-background: #000;
   --color-git-black: #151515;
@@ -57,9 +279,10 @@
 
 :root {
   /* Primary Font */
-  --font-primary: sans-serif;
-  --font-secondary: serif;
-  /* Set Base Value*/
+  --font-primary: "Linux-Libertine",	serif;
+  --font-secondary: "Changa",	sans-serif;
+  --font-brand: "Kanit", sans-serif;
+  /* Text Base Value*/
   --text-base-size: 1em;
   --text-scale-ratio: 1.2;
   /* Type Scale */
@@ -74,6 +297,21 @@
   --body-line-height: 1.4;
 }
 
+/*
+@include breakpoint(md) {
+  :root {
+    // you can manage typography editing only these 2 variables
+    --text-base-size: 1.25em;
+    --text-scale-ratio: 1.25;
+  }
+}
+*/
+h1#brand {
+  font-family: var(--font-brand);
+  font-variant: small-caps;
+  font-weight: 300;
+}
+
 body {
   font-size: var(--text-base-size);
   font-family: var(--font-primary);
@@ -81,7 +319,14 @@ body {
 }
 
 h1, h2, h3, h4 {
+  font-family: var(--font-secondary);
+  font-weight: bold;
   line-height: var(--heading-line-height);
+}
+
+/* Text size */
+.text-xxxl {
+  font-size: var(--text-xxxl);
 }
 
 h1, .text-xxl {
@@ -92,7 +337,7 @@ h2, .text-xl {
   font-size: var(--text-xl);
 }
 
-h3, .text-lg {
+h3, .text-lg, #main_menu {
   font-size: var(--text-lg);
 }
 
@@ -114,15 +359,16 @@ p {
 
 :root {
   /* spacing values */
-  --space-xxxs: 0.25em;
-  --space-xxs: 0.375em;
-  --space-xs: 0.5em;
-  --space-sm: 0.75em;
-  --space-md: 1.25em;
-  --space-lg: 2em;
-  --space-xl: 3.25em;
-  --space-xxl: 5.25em;
-  --space-xxxl: 8.5em;
+  --space-unit: 1em;
+  --space-xxxs: calc(0.25 * var(--space-unit));
+  --space-xxs: calc(0.375 * var(--space-unit));
+  --space-xs: calc(0.5 * var(--space-unit));
+  --space-sm: calc(0.75 * var(--space-unit));
+  --space-md: calc(1.25 * var(--space-unit));
+  --space-lg: calc(2 * var(--space-unit));
+  --space-xl: calc(3.25 * var(--space-unit));
+  --space-xxl: calc(5.25 * var(--space-unit));
+  --space-xxxl: calc(8.5 * var(--space-unit));
 }
 
 h1, h2, h3, h4, form legend {
@@ -135,6 +381,34 @@ h1, h2, h3, h4, form legend {
 }
 .text-container ul, .text-container ol, .text-container p {
   margin-bottom: var(--space-md);
+}
+
+#main_menu {
+  background-color: var(--color-werner-background);
+  font-family: var(--font-secondary);
+  font-weight: 200;
+  position: fixed;
+  width: auto;
+}
+#main_menu ul li {
+  list-style: none;
+}
+#main_menu a {
+  text-decoration: none;
+  color: var(--color-git-black);
+  display: block;
+}
+#main_menu a ::hover {
+  color: var(--color-git-white);
+}
+#main_menu--item--odd {
+  padding-left: calc(1em/var(--text-scale-ratio));
+}
+#main_menu .main_menu--icon {
+  color: var(--color-git-white);
+  background-color: var(--color-werner-background);
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
 /*# sourceMappingURL=theme.css.map */

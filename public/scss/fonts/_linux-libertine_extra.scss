@@ -1,0 +1,44 @@
+// fonts/_linux-libertine_extra.scss
+
+// ---
+// This file is part of the PxlCtzn Website project.
+//
+// Copyright (C) 2018  PxlCtzn
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+// See the GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License along with this program.
+// If not, see <https://www.gnu.org/licenses/>.
+// ---
+
+// Import order : woff, otf, ttf, svg
+
+// Display Normal
+@font-face {
+	font-family: "Linux-Libertine-Display";
+	font-style: normal;
+	font-weight: normal;
+	src:  url('../fonts/linux_libertine/woff/LinLibertine_DR.woff')	format('woff'),
+        url('../fonts/linux_libertine/otf/LinLibertine_DR.otf') 	format('opentype'),
+//			url('../fonts/linux_libertine/ttf/LinLibertine_DR.ttf') 	format('truetype'),	// Disable ; Cause : BAD FILE
+        url('../fonts/linux_libertine/svg/LinLibertine_DR.svg')	format('svg');
+}
+
+// Initial Normal
+@font-face {
+	font-family: "Linux-Libertine-Initial";
+	font-style: normal;
+	font-weight: normal;
+	src: 	url('../fonts/linux_libertine/woff/LinLibertine_I.woff')	format('woff'),
+        url('../fonts/linux_libertine/otf/LinLibertine_I.otf') 	format('opentype'),
+//			url('../fonts/linux_libertine/ttf/LinLibertine_I.ttf') 	format('truetype'),	// Disable ; Cause : BAD FILE
+        url('../fonts/linux_libertine/svg/LinLibertine_I.svg')		format('svg');
+}
