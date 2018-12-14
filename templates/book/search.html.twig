@@ -1,5 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-
+{{ form_start(search_form) }}
+    {{ form_widget(search_form) }}
+    <input type="submit" class="btn" value="Search" />
+{{ form_end(search_form) }}
 {% endblock %}

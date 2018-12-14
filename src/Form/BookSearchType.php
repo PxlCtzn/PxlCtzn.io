@@ -12,7 +12,7 @@ class BookSearchType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('', TextType::class);
+        $builder->add('query', TextType::class);
     }
 
     public function configureOptions(OptionsResolver $resolver)

@@ -4,6 +4,8 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 class BookController extends AbstractController
 {
@@ -23,16 +25,36 @@ class BookController extends AbstractController
      */
     public function add()
     {
-        return $this->render('book/search.html.twig', array());
+        return $this->render('book/index.html.twig', [
+            'controller_name' => 'BookController',
+        ]);
     }
     
     /**
+     * @Route("/books/search", name="book_search")
      * 
      * @param string $candidate
      */
-    public function search(string $candidate)
+    public function search(Request $request)
     {
-        return $this->render('book/search.html.twig', array());
+        $searchForm = $this->createFormBuilder()
+        ->add('q', TextType::class)
+        ->getForm();
+        
+        $searchForm->handleRequest($request);
+        
+        if ($searchForm->isSubmitted() && $searchForm->isValid()) {
+            list($candidate) = $searchForm->getData();
+            var_dump($candidate);
+            
+            die();
+        }
+        
+        return $this->render(
+            'book/search.html.twig', 
+            array(
+                'search_form' => $searchForm->createView()
+            )
+        );
     }
-    
 }
