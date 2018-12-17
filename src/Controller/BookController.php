@@ -6,6 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use App\Utils\BookWorms\Web\JustBookCrawler;
+use App\Utils\BookWorms\Web\AmazonCrawler;
 
 class BookController extends AbstractController
 {
@@ -44,9 +46,12 @@ class BookController extends AbstractController
         $searchForm->handleRequest($request);
         
         if ($searchForm->isSubmitted() && $searchForm->isValid()) {
-            list($candidate) = $searchForm->getData();
-            var_dump($candidate);
+            $data = $searchForm->getData();
+            $isbn = $data['q'];
             
+            $jbc = new AmazonCrawler();
+            $data = $jbc->findByISBN($isbn);
+            var_dump($data);
             die();
         }
         
