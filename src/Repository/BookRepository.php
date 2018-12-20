@@ -47,4 +47,31 @@ class BookRepository extends ServiceEntityRepository
         ;
     }
     */
+    
+    /**
+     * 
+     * @param string $isbn_ean
+     */
+    public function findOneByISBNorEAN(string $isbn_ean)
+    {   
+        
+    }
+    
+    /**
+     * 
+     * @param string $ean
+     */
+    protected function findOneByEAN(string $ean)
+    {
+        
+    }
+    
+    /**
+     * 
+     * @param string $isbn
+     */
+    protected function findOneByISBN(string $isbn)
+    {
+        
+    }
 }

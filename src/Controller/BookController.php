@@ -8,6 +8,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use App\Utils\BookWorms\Web\JustBookCrawler;
 use App\Utils\BookWorms\Web\AmazonCrawler;
+use Doctrine\ORM\EntityManagerInterface;
+use App\Utils\BookWorms\Web\BooksByIsbnCrawler;
 
 class BookController extends AbstractController
 {
@@ -37,7 +39,7 @@ class BookController extends AbstractController
      * 
      * @param string $candidate
      */
-    public function search(Request $request)
+    public function search(Request $request, EntityManagerInterface $entityManager)
     {
         $searchForm = $this->createFormBuilder()
         ->add('q', TextType::class)
@@ -46,10 +48,12 @@ class BookController extends AbstractController
         $searchForm->handleRequest($request);
         
         if ($searchForm->isSubmitted() && $searchForm->isValid()) {
+            
+            
             $data = $searchForm->getData();
             $isbn = $data['q'];
             
-            $jbc = new AmazonCrawler();
+            $jbc = new BooksByIsbnCrawler();
             $data = $jbc->findByISBN($isbn);
             var_dump($data);
             die();
